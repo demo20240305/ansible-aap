@@ -1,0 +1,9 @@
+---
+- hosts: localhost
+ connection: local
+ name: Add User
+ gather_facts: false
+ collections:
+ - hpe.ilo
+ roles:
+ - adduser
